@@ -59,11 +59,3 @@ function onClick() {
 
 //SECONDA PARTE: GENERAZIONE BOMBE
 
-//1. Creare constante per il numero di bombe da inserire e un array vuoto per tenerne traccia
-
-
-//2. Generare 16 numeri casuali unici che rappresentano le posizioni delle bombe
-
-//3. Modificare l'event listener per il click sulla cella
-
-//4. Partita conclusa, comunico punteggio
