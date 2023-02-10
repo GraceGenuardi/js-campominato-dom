@@ -39,7 +39,7 @@ playButton.addEventListener('click', function () { //NB Correggi dando nome alla
 			console.log(i + 1)
 		})
 
- //4. BONUS: cambio background delle celle cal click
+ //4. BONUS: cambio background delle celle al click
  
  cella.addEventListener('click', function () {
     console.log(i + 1)
@@ -52,11 +52,20 @@ playButton.addEventListener('click', function () { //NB Correggi dando nome alla
 		cella.classList.add("bomba")
 		
 		// codice per terminare la partita
+        alert('Hai cliccato su una bomba, la partita è finita');
+        playButton.removeEventListener('click', onClick);
 	} else {
 		// altrimenti colorare col backgroung già dato, rosa trasparente
 		cella.classList.toggle("cella-selezionata")
 		
 		// codice per tenere traccia del punteggio
+        punteggio++;
+
+        
+        if (punteggio === numeroCelle - numeroBombe) {
+            alert(`Hai vinto! Il tuo punteggio è ${punteggio}`);
+            playButton.removeEventListener('click', onClick);
+          }
 	}
 })
    
@@ -102,4 +111,3 @@ while (bombe.length < numeroBombe) {
 
 // Dichiariamo una costante per tenere traccia del punteggio
 let punteggio = 0;
-
