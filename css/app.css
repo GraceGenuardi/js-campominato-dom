@@ -91,3 +91,19 @@ button h2 {
     background-image: url(../img/bomba.webp);
     background-size: cover;
 }
+
+
+.punteggio-finale{
+    width: 200px;
+    align-items: center;
+    margin-left: 350px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #5492af;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    color: white;
+    text-decoration: dotted;
+}

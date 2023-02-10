@@ -54,12 +54,14 @@ playButton.addEventListener('click', function () { //NB Correggi dando nome alla
 		// codice per terminare la partita
         alert('Hai cliccato su una bomba, la partita è finita');
         playButton.removeEventListener('click', onClick);
+        alert(`La partita è finita! Il tuo punteggio è ${punteggio}`)
 	} else {
 		// altrimenti colorare col backgroung già dato, rosa trasparente
 		cella.classList.toggle("cella-selezionata")
 		
 		// codice per tenere traccia del punteggio
         punteggio++;
+        punteggioElement.innerHTML = `Punteggio: ${punteggio}`;
 
         
         if (punteggio === numeroCelle - numeroBombe) {
@@ -111,3 +113,8 @@ while (bombe.length < numeroBombe) {
 
 // Dichiariamo una costante per tenere traccia del punteggio
 let punteggio = 0;
+
+//Stampo il risultato nella mia pagina web
+
+const punteggioElement = document.querySelector('#punteggio');
+punteggioElement.innerHTML = 'Punteggio: 0';
