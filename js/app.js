@@ -59,10 +59,11 @@ function onClick() {
 
 //SECONDA PARTE: GENERAZIONE BOMBE
 
-
-//SECONDA PARTE: GENERAZIONE BOMBE
-
 //1. Creare constante per il numero di bombe da inserire e un array vuoto per tenerne traccia
+const numeroBombe = 16;
+let bombe = [];
+
+
 
 
 //2. Generare 16 numeri casuali unici che rappresentano le posizioni delle bombe
