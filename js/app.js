@@ -44,6 +44,8 @@ playButton.addEventListener('click', function () { //NB Correggi dando nome alla
  cella.addEventListener('click', function () {
     console.log(i + 1)
     cella.classList.toggle("cella-selezionata")
+
+    
 })
    
 
@@ -66,8 +68,26 @@ let bombe = [];
 
 
 
-//2. Generare 16 numeri casuali unici che rappresentano le posizioni delle bombe
+//2. Generare 16 numeri casuali unici che rappresentano le posizioni delle bombe (ciclo while)
 
-//3. Modificare l'event listener per il click sulla cella
+while (bombe.length < numeroBombe) {
+    let numeroCasuale = Math.floor(Math.random() * numeroCelle) + 1
+
+
+    if (!bombe.includes(numeroCasuale)) {
+        bombe.push(numeroCasuale);
+    }
+
+}
+
+//3. Modificare l'event listener per il click sulla cella, in alto
+
+
+
+
 
 //4. Partita conclusa, comunico punteggio
+
+
+
+	
