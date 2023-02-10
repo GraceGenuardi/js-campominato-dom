@@ -98,8 +98,8 @@ while (bombe.length < numeroBombe) {
 
 
 
-//4. Partita conclusa, comunico punteggio
+// TERZA PARTE: FINE PARTITA E PUNTEGGIO
 
-//Dichiaro le costanti con punteggio 0 
+// Dichiariamo una costante per tenere traccia del punteggio
+let punteggio = 0;
 
-	
