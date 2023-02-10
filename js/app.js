@@ -43,9 +43,21 @@ playButton.addEventListener('click', function () { //NB Correggi dando nome alla
  
  cella.addEventListener('click', function () {
     console.log(i + 1)
-    cella.classList.toggle("cella-selezionata")
-
     
+
+    let numeroCella = i + 1;
+	
+	if (bombe.includes(numeroCella)) {
+		// se la cella cliccata è una bomba, comparirà il dipinto dipinto da Van Ghog rappresentante la bomba nucleare
+		cella.classList.add("bomba")
+		
+		// codice per terminare la partita
+	} else {
+		// altrimenti colorare col backgroung già dato, rosa trasparente
+		cella.classList.toggle("cella-selezionata")
+		
+		// codice per tenere traccia del punteggio
+	}
 })
    
 
@@ -80,7 +92,7 @@ while (bombe.length < numeroBombe) {
 
 }
 
-//3. Modificare l'event listener per il click sulla cella, in alto
+//3. Modificare l'event listener per il click sulla cella
 
 
 
@@ -88,6 +100,6 @@ while (bombe.length < numeroBombe) {
 
 //4. Partita conclusa, comunico punteggio
 
-
+//Dichiaro le costanti con punteggio 0 
 
 	

@@ -82,3 +82,12 @@ button h2 {
 .cella-selezionata{
     background-color: #e5ccb6b6;
 }
+
+
+
+/**PARTE DUE***/
+
+.bomba {
+    background-image: url(../img/bomba.webp);
+    background-size: cover;
+}
